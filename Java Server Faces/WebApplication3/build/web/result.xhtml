@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+        <h:head>
+            <h:outputStylesheet library="css" name="style.css"/> 
+    </h:head>
+    <h:body>
+    	        <ui:composition template="main.xhtml">	
+            <ui:define name="content">	
+                <br/>
+            <h:link value="Home Page" outcome="home" />
+            <br/><br/>
+            <h:link value="log out" outcome="index" />			
+            <br/>
+    	<h1>Submitted Form Response</h1>
+    	    	
+    	<ol>
+    		<li>Question 1: #{SurveyForm1.q1}</li>
+    		<li>Question 2 : #{SurveyForm1.q2}</li>
+    		<li>Question 3 : #{SurveyForm1.q3}</li>
+    		<li>Question 4 : #{SurveyForm1.q4}</li>
+    		<li>Question 5 : #{SurveyForm1.q5}</li>
+    		<li>Question 6 : #{SurveyForm1.q6}</li>
+    		<li>Question 7 : #{SurveyForm1.q7}</li>
+    		<li>Question 8 : #{SurveyForm1.q8}</li>
+    		<li>Question 9 : #{SurveyForm1.q9}</li>
+    		<li>Question 10 : #{SurveyForm1.q10}</li>
+    		<li>Question 11 : #{SurveyForm1.q11}</li>
+    		<li>Question 12 : #{SurveyForm1.q12}</li>
+    		<li>Question 13: #{SurveyForm1.q13}</li>
+    		<li>Question 14 : #{SurveyForm1.q14}</li>
+    		<li>Question 15: #{SurveyForm1.q15}</li>
+    		<li>Question 16: #{SurveyForm1.q16}</li>
+    		<li>Question 17: #{SurveyForm1.q17}</li>
+    		<li>Question 18: #{SurveyForm1.q18}</li>
+    		<li>Question 19: #{SurveyForm1.q19}</li>
+    		<li>Question 20 : #{SurveyForm1.q20}</li>
+    		<li>Question 21 : #{SurveyForm1.q21}</li>
+    		<li>Question 22 : #{SurveyForm1.q22}</li>
+    		<li>Question 23 : #{SurveyForm1.q23}</li>
+    		<li>Question 24 : #{SurveyForm1.q24}</li>
+    		<li>Question 25 : #{SurveyForm1.q25}</li>
+    		<li>Question 26 : #{SurveyForm1.q26}</li>
+    		<li>Question 27 : #{SurveyForm1.q27}</li>
+    		<li>Comment Teaching Approach: #{SurveyForm1.com_TeachingApproaches}</li>    
+    		<li>Comments (Feedback and Assessment): #{SurveyForm1.comRecourseAdminstration}</li>    
+    		<li>Comments (Resources and Administration): #{SurveyForm1.comAdditionalQuestions}</li>    
+    		<li>Comments (Additional Questions): #{SurveyForm1.comOverallExp}</li>    
+    		<li>Comments (Overall Experience): #{SurveyForm1.comStdSelfEvaluation}</li>    
+    		<li>What changes would you recommend to improve this course?: #{SurveyForm1.changesRecomending}</li>   
+    		<li>What did you like best about your instructors teaching? #{SurveyForm1.likeBestAboutInstructor}</li>   
+    		<li>What did you like least about your instructor’s teaching? #{SurveyForm1.likeLeastAboutInstructor}</li>   
+    		<li>Any further, constructive comment: #{SurveyForm1.likeBestAboutInstructor}</li>   
+    	</ol>
+            </ui:define>
+         </ui:composition> 
+    </h:body>
+</html>

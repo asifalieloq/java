@@ -1,0 +1,18 @@
+
+
+module FileShareApp
+{
+  interface fileshare
+  {
+    string RegisterFile(in string argclientId ,in string argipAddress ,in long argportNumber ,in string argclientName ,in string argfileName ,in string argfileLocation,in string argfileImage );    
+    string deleteFile(in string argclientId, in string argfileName);
+    string updateFile(in long FileID, in string argclientId ,in string argipAddress ,in long argportNumber ,in string argclientName ,in string argfileName ,in string argfileLocation,in string argfileImage);
+    string listFile(in long loopId,out long FileID, out string argclientId ,out string argipAddress ,out long argportNumber ,out string argclientName ,out string argfileName ,out string argfileLocation,out string argfileImage);
+    string printFiles(in long loopId, out string argclientId ,out string argipAddress ,out long argportNumber ,out string argclientName , out long FileID,out string argfileName ,out string argfileLocation,out string argfileImage);
+    long getTotalNumberOfFiles();
+    long getLastFileID();
+    long refreshList();
+
+    oneway void shutdown();
+  };
+};

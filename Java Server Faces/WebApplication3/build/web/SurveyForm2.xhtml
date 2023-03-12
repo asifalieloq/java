@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="style.css"/> 
+    </h:head>
+    <h:body>
+        <ui:composition template="main.xhtml">	
+            <ui:define name="content">	
+                    <h2>Course Evaluator: </h2>
+                    <h:form>
+
+                    <table>
+ <thead>
+                            <tr>
+                                <th style="width: 900px; height: 60px" align="left" >FEEDBACK AND ASSESSMENT</th>
+                                <th style="width: 500px; height: 60px; padding-left: 200px" align="left" >Strongly Agree       Agree     Neutral      Disagree     Strongly Disagree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td >11. Information about the assessment was communicated clearly.</td>
+                                <td style="width: 500px; height: 60px" align="left">
+                                    <h:selectOneRadio value ="#{SurveyForm1.q11}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                         <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr> 
+                        <tr>
+                            <td >12. Feedback was provided within the stated timeframe.</td>
+                                                            <td style="width: 500px; height: 50px" align="left">
+                                    <h:selectOneRadio value ="#{SurveyForm1.q12}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                          <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr> 
+                        <tr>
+                            <td > 13. Feedback showed how to improve my work (e .g. corrections including comments).</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q13}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                        <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr>                             
+                              </tbody>
+                    </table>
+
+                    <h:outputLabel for="comteachingapproach">Comments (Resources and Administration)</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.comRecourseAdminstration}" cols="200" rows="10" /></td>
+                        </tr> 
+                    </table>
+                    <table>
+                         <thead>
+                            <tr>
+                                <th style="width: 900px; height: 60px" align="left" >RESOURCES AND ADMINISTRATION</th>
+                                <th style="width: 500px; height: 60px; padding-left: 200px" align="left" >Strongly Agree       Agree     Neutral      Disagree     Strongly Disagree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td >14. The course was supported by adequate library resources.</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q14}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                        <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr> 
+                        <tr>
+                            <td >15. Blackboard resources for the course were useful.</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q15}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                         <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr> 
+                        <tr>
+                            <td >16. Instructor gave guidance on where to find resources.</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q16}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                        <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                        </tr> 
+                            </tbody>
+                    </table>
+                    <h:outputLabel for="comteachingapproach">Comments (Resources and Administration)</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.comRecourseAdminstration}" cols="200" rows="10" /></td>
+                        </tr> 
+                    </table>
+	<h:commandButton styleClass="submit" value="Reset" style="width:80px; padding: 10px 5px; margin: 10px 5px;" type="reset" />
+                <h:commandButton styleClass="submit" value="Next"  style="width:100px; padding: 10px 5px; margin: 10px 5px;" action="SurveyForm3" />
+                </h:form>
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>

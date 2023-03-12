@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="style.css"/> 
+    </h:head>
+    <h:body>
+        <ui:composition template="main.xhtml">	
+            <ui:define name="content">	
+                <h2>Course Evaluator: </h2>
+                <h3>STUDENT SELF EVALUATION</h3>                <h:form>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 900px; height: 60px" align="left" >RESOURCES AND ADMINISTRATION</th>
+                                <th style="width: 500px; height: 60px; padding-left: 200px" align="left" >Strongly Agree       Agree     Neutral      Disagree     Strongly Disagree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >17. The course was supported by adequate library resources.</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q26}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                        <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                        <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td >18. Blackboard resources for the course were useful.</td>
+                                <td>
+                                    <h:selectOneRadio value ="#{SurveyForm1.q27}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                        <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                        <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                        <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                    </h:selectOneRadio>	
+                                </td>
+                            </tr> 
+                        </tbody>
+                    </table>
+
+                    <h:outputLabel for="comteachingapproach">Comments (Student Self Evaluation)</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.comStdSelfEvaluation}" cols="200" rows="10" /></td>
+                        </tr> 
+                    </table>
+                    <h3>COMMENTS ON STRENGTHS AND WAYS OF IMPROVEMENT</h3>
+
+                    <h:outputLabel for="comteachingapproach">What changes would you recommend to improve this course?</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.changesRecomending}" cols="200" rows="5" /></td>
+                        </tr> 
+                    </table>
+
+                    <h:outputLabel for="comteachingapproach">What did you like best about your instructors teaching?</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.likeBestAboutInstructor}" cols="200" rows="5" /></td>
+                        </tr> 
+                    </table>
+
+
+                    <h:outputLabel for="comteachingapproach">What did you like least about your instructor’s teaching?</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.likeLeastAboutInstructor}" cols="200" rows="5" /></td>
+                        </tr> 
+                    </table><!-- comment -->
+
+
+                    <h:outputLabel for="comteachingapproach">Any further, constructive comment:</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.furtherConstructiveCom}" cols="200" rows="5" /></td>
+                        </tr> 
+                    </table>
+
+                    <h:commandButton styleClass="submit" value="Reset" style="width:80px; padding: 10px; margin: 10px;" type="reset" />
+                    <h:commandButton styleClass="submit" value="Submit and Preview"  style="width:150px; padding: 10px; margin: 10px;" action="result" />
+
+
+                </h:form>
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>

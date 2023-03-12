@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Survey Application JSF</title>
+              <h:outputStylesheet library="css" name="style.css"/> 
+
+    </h:head>
+    <h:body>
+                            <h:graphicImage library="images" name="logo.PNG" width="400" height="171" />
+
+<div style="formcontainer" id="loginBox">
+       <h3>Course Evaluation Project</h3>
+                      <b>Please enter the credentials</b> <br/><br/>
+		<h:form id="loginForm" styleClass="form">
+			<h:outputLabel styleClass="label1" value="User Name:" />
+			<h:inputText styleClass="theinput" value="#{userLogin.username}" /> <br />
+			<h:outputLabel styleClass="label1" value="Password:" />
+			<h:inputSecret styleClass="theinput" value="#{userLogin.password}"></h:inputSecret><br/>
+                        <h:outputLabel styleClass="label1" value="" />
+                       <b>#{userLogin.message}</b> <br/><br/>
+			<h:commandButton styleClass="submit" value="Log In" action="#{userLogin.login}"></h:commandButton>
+		</h:form>
+               </div>
+
+    </h:body>
+    
+    
+</html> 

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <h:outputStylesheet library="css" name="style.css"/> 
+    </h:head>
+    <h:body>
+        <ui:composition template="main.xhtml">	
+            <ui:define name="content">	
+                <h2>Course Evaluator: </h2>
+                <h3>TEACHING APPROACHES</h3>
+                <h:form>
+                    <table>
+                           <thead>
+                                <tr>
+                                    <th style="width: 900px; height: 60px" align="left" >Instructor's Approach </th>
+                                <th style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px">Strongly Agree       Agree     Neutral      Disagree     Strongly Disagree</th>
+                                </tr>
+                             </thead>
+                        <tbody>
+                        <tr>
+                            <td >1. The instructor stimulated my interest in the subject.</td>
+                            <td>
+                                <h:selectOneRadio value ="#{SurveyForm1.q1}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px">
+                                    <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                    <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                    <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                                </h:selectOneRadio>	
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td >2. The instructor managed classroom time and pace well.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q2}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+
+                        </tr> 
+                        <tr>
+                            <td > 3.  The instructor was organized and prepared for every class.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q3}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr> 
+                        <tr>
+                            <td > 4. The instructor encouraged discussions and responded to questions.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q4}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr> 
+
+                        <tr>
+                            <td > 5.  The instructor demonstrated in-depth knowledge of the subject.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q5}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                            
+                        </tr> 
+
+
+                        <tr>
+                            <td > 6.  The instructor appeared enthusiastic and interested.</td>
+                              <td >  <h:selectOneRadio value ="#{SurveyForm1.q6}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                           
+                        </tr> 
+
+                        <tr>
+                            <td > 7.  The instructor used a variety of instructional methods to reach the course objectives (e.g. group discussions, student presentations, etc.)                
+                            </td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q7}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr>      
+                        <tr>
+                            <td > 8.  The instructor challenged students to do their best work.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q8}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Strongly Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Agree" itemLabel = "" />
+                                <f:selectItem itemValue = "Neutral" itemLabel = "" />
+                                <f:selectItem itemValue = "Disagree" itemLabel = "" />
+                                <f:selectItem itemValue = "Strongly Disagree" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr>      
+                                                    </tbody>
+                    </table>
+                                      <table>
+                           <thead>
+                                <tr>
+                                    <th style="width: 900px; height: 60px" align="left"  >PLEASE CROSS THE RESPONSE THAT REPRESENTS YOUR OPINION. </th>
+                                    <th style="width: 500px; height: 60px; padding-left: 200px" align="left" >Yes       No     </th>
+                                </tr>
+                             </thead>
+                        <tbody>
+                        <tr>
+                            <td > 9. The instructor was accessible outside of class.</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q9}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "yes" itemLabel = "" />
+                                <f:selectItem itemValue = "no" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr>   
+                        <tr>
+                            <td > 10. Did the instructor actively attempt to prevent cheating in this course?</td>
+                           <td >  <h:selectOneRadio value ="#{SurveyForm1.q10}" style="width: 600px; margin-left:  200px; margin-right: 70px; padding-right: 80px" >
+                                <f:selectItem itemValue = "Yes" itemLabel = "" />
+                                <f:selectItem itemValue = "No" itemLabel = "" />
+                            </h:selectOneRadio>	                            </td>
+                        </tr>  
+                        </tbody>
+                    </table>
+
+                    <h:outputLabel for="comteachingapproach">Comments (Teaching Approaches)</h:outputLabel>  
+                    <table>
+                        <tr>
+                            <td><h:inputTextarea value="#{SurveyForm1.com_TeachingApproaches}" cols="200" rows="10" /></td>
+                        </tr> 
+                    </table>
+
+                    <h:commandButton styleClass="submit" value="Reset" style="width:80px; padding: 10px; margin: 10px;" type="reset" />
+                    <h:commandButton styleClass="submit" value="Next"  style="width:100px; padding: 10px; margin: 10px;" action="SurveyForm2" />
+                </h:form>
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>
